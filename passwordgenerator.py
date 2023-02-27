@@ -20,7 +20,7 @@ def save_password():
     password_usage = platform_entry.get()
     password = generate_password()
 
-    with open("password.txt", "a") as file:
+    with open("passwords.txt", "a") as file:
         file.write("Username : " + kullanici_adi + "\n")
         file.write("Password : " + password + "\n")
         file.write("Platform : " + password_usage + "\n")
